@@ -1,6 +1,6 @@
 # Speech-to-Speech Streaming Application
 
-This web application allows users to upload an audio file and a video file. The audio is transcribed using OpenAI's Whisper model, then translated to the selected language using the Helsinki-NLP translation models. The translated text is converted to speech and used to replace the original audio in the video.
+This web application allows users to upload an audio file and a video file. The audio is transcribed using OpenAI's Whisper model, then translated to the selected language using the LLM models. The translated text is converted to speech and used to replace the original audio in the video.
 
 ## Features:
 - Upload audio and video files
