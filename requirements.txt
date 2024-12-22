@@ -1,0 +1,8 @@
+Flask
+whisper
+langchain
+langchain-community
+transformers
+torch
+ffmpeg-python
+gTTS

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speech to Speech Translation</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Speech to Speech Streaming</h1>
+    </header>
+    <main>
+        <div class="container">
+            <div class="box">
+                <form action="/upload" method="post" enctype="multipart/form-data">
+                    <div class="file-upload">
+                        <label for="video">Upload Video File:</label>
+                        <input id="video" type="file" name="video" accept="video/*" required>
+                    </div>
+                    <div class="language-select">
+                        <label for="language">Select Target Language:</label>
+                        <select id="language" name="language" required>
+                            <option value="" disabled selected>Select a language</option>
+                            {% for lang in languages %}
+                            <option value="{{ lang }}">{{ lang }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    <div class="submit">
+                        <button type="submit">Upload and Translate</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Speech Translation App. All rights reserved.</p>
+    </footer>
+</body>
+</html>

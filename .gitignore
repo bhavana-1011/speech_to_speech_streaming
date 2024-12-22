@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+uploads/
+output/
+myenv/
+.env
+ffmpeg-master-latest-win64-gpl/
