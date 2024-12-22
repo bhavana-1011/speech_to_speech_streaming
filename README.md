@@ -3,7 +3,7 @@
 This web application allows users to upload an audio file and a video file. The audio is transcribed using OpenAI's Whisper model, then translated to the selected language using the LLM models. The translated text is converted to speech and used to replace the original audio in the video.
 
 ## Features:
-- Upload audio and video files
+- Upload video files
 - Select a language for translation
 - Transcribe audio using Whisper
 - Translate transcribed text to the selected language
